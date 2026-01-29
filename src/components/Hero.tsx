@@ -60,7 +60,7 @@ const Hero = () => {
               variant="outline"
               size="lg"
               onClick={scrollToServices}
-              className="w-full sm:w-auto border-2 border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/10 hover:border-primary-foreground/60 px-8 py-6 text-base font-semibold transition-all"
+              className="w-full sm:w-auto border-2 border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/10 hover:border-primary-foreground/60 px-8 py-6 text-base font-semibold transition-all  text-black"
             >
               View Services
             </Button>
