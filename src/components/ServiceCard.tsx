@@ -14,6 +14,7 @@ interface ServiceCardProps {
   icon: LucideIcon;
   documents: DocumentItem[];
   isNew?: boolean;
+  price?: string;
 }
 
 interface UploadedFile {
@@ -21,7 +22,7 @@ interface UploadedFile {
   documentType: string;
 }
 
-const ServiceCard = ({ title, icon: Icon, documents, isNew }: ServiceCardProps) => {
+const ServiceCard = ({ title, icon: Icon, documents, isNew, price }: ServiceCardProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [uploadedFiles, setUploadedFiles] = useState<UploadedFile[]>([]);
   const [showUploadSection, setShowUploadSection] = useState(false);
@@ -65,11 +66,18 @@ const ServiceCard = ({ title, icon: Icon, documents, isNew }: ServiceCardProps) 
               {title}
             </CardTitle>
           </div>
-          {isNew && (
-            <span className="shrink-0 px-2.5 py-1 text-xs font-bold bg-accent text-accent-foreground rounded-full shadow-sm">
-              Popular
-            </span>
-          )}
+          <div className="flex flex-col items-end gap-1">
+            {isNew && (
+              <span className="shrink-0 px-2.5 py-1 text-xs font-bold bg-accent text-accent-foreground rounded-full shadow-sm">
+                Popular
+              </span>
+            )}
+            {price && (
+              <span className="shrink-0 px-3 py-1.5 text-sm font-bold bg-primary text-primary-foreground rounded-lg shadow-sm">
+                {price}
+              </span>
+            )}
+          </div>
         </div>
       </CardHeader>
       <CardContent className="space-y-4">
