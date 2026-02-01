@@ -34,25 +34,25 @@ const Header = () => {
             <img 
               src={logo} 
               alt="HF DOC CONSULTANCY SERVICES" 
-              className="h-12 sm:h-14 w-auto object-contain"
+              className="h-14 sm:h-16 md:h-18 w-auto object-contain"
             />
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className="hidden md:flex items-center gap-2">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={(e) => { e.preventDefault(); scrollToSection(link.href); }}
-                className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors rounded-md hover:bg-secondary"
+                className="px-4 py-2.5 text-sm font-semibold text-foreground/80 hover:text-primary hover:bg-primary/5 active:bg-primary/10 transition-all duration-200 rounded-lg border border-transparent hover:border-primary/20"
               >
                 {link.name}
               </a>
             ))}
             <Button 
               onClick={() => scrollToSection("#contact")}
-              className="ml-2 bg-accent hover:bg-accent/90 text-accent-foreground font-semibold"
+              className="ml-3 gold-gradient text-accent-foreground font-bold px-5 py-2 hover:opacity-90 hover:scale-105 transition-all duration-200 shadow-md"
             >
               Get Started
             </Button>
@@ -77,14 +77,14 @@ const Header = () => {
                   key={link.name}
                   href={link.href}
                   onClick={(e) => { e.preventDefault(); scrollToSection(link.href); }}
-                  className="px-4 py-3 text-base font-medium text-foreground/80 hover:text-primary hover:bg-secondary rounded-md transition-colors"
+                  className="px-4 py-3 text-base font-semibold text-foreground/80 hover:text-primary hover:bg-primary/5 active:bg-primary/10 rounded-lg transition-all duration-200 border-l-2 border-transparent hover:border-primary"
                 >
                   {link.name}
                 </a>
               ))}
               <Button 
                 onClick={() => scrollToSection("#contact")}
-                className="mt-2 bg-accent hover:bg-accent/90 text-accent-foreground font-semibold"
+                className="mt-3 w-full gold-gradient text-accent-foreground font-bold py-3 hover:opacity-90 transition-all duration-200 shadow-md"
               >
                 Get Started
               </Button>
