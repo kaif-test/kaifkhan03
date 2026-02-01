@@ -100,7 +100,7 @@ const Footer = () => {
                   <div className="p-2 rounded-lg bg-primary-foreground/10 group-hover:bg-accent/20 transition-colors">
                     <Phone className="w-4 h-4 text-accent" />
                   </div>
-                  <span className="text-sm text-primary-foreground/70 group-hover:text-accent">+91 98765 43210</span>
+                  <span className="text-sm text-primary-foreground/70 group-hover:text-accent">+91 82913 22540</span>
                 </a>
               </li>
               <li>

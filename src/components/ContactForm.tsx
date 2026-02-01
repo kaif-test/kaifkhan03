@@ -221,7 +221,7 @@ const ContactForm = () => {
                         type="tel"
                         value={formData.mobile}
                         onChange={handleInputChange}
-                        placeholder="+91 98765 43210"
+                        placeholder="+91 9876543210"
                         required
                         className="bg-background border-input focus:border-primary focus:ring-primary"
                       />

@@ -99,7 +99,7 @@ const Hero = () => {
               <div className="p-2 rounded-full bg-accent/30 group-hover:bg-accent/50 transition-colors">
                 <Phone className="w-4 h-4 text-accent" />
               </div>
-              <span className="text-sm font-medium">Call us: +91 98765 43210</span>
+              <span className="text-sm font-medium">Call us: +91 82913 22540</span>
             </a>
           </div>
         </div>
